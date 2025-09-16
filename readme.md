@@ -1,5 +1,9 @@
 # FALCON-EDGE — An Open-Source Flying-Wing with an ESP32 Flight Computer
 
+### New light version 400g instead of 800g
+
+![Falcon-Edge light](./light.png)
+
 ![Falcon-Edge render](./global.png)
 
 Falcon-Edge is a compact flying-wing airframe with a custom **ESP32-based flight computer**.  
@@ -22,7 +26,7 @@ This repo contains the **KiCad hardware project** and **3D CAD** needed to print
   - **GNSS header** for a u-blox NEO-style GPS module.
   - **Power:** AMS1117 regulators (3V3/5V) and dedicated servo power planes/decoupling.
   - **Programming:** UART header with EN/BOOT auto-reset circuitry.
-  - **RF/Telemetry:** LoRa with edge SMA/U.FL footprint for an external antenna (radio/telemetry module of your choice).
+  - **RF/Telemetry:** LoRa with edge SMA/U.FL footprint for an external antenna.
 
 > See the schematic for exact pin mapping and connector naming.
 
@@ -70,7 +74,6 @@ images/ # Renders and board views used in this README (optional)
 ### 3) Wiring (at a glance)
 
 - **Battery in** → power/battery header near regulators.
-- **Servos** → servo headers (driven by PCA9685 over I²C).
 - **GPS** → dedicated UART header / GPS footprint.
 - **Programming** → UART (EN/BOOT accessible).
 - **Telemetry/Radio** → SMA/U.FL at the board edge.
