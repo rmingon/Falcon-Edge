@@ -1,5 +1,7 @@
 # FALCON-EDGE — An Open-Source Flying-Wing with an ESP32 Flight Computer
 
+This repository contains hardware designs, documentation, and code for an aircraft project.
+
 ### New light version 400g instead of 800g
 
 ![Falcon-Edge light](./light.png)
@@ -121,13 +123,19 @@ PRs and issues are welcome:
 
 ---
 
-## 📜 License
+## License Overview
 
-Choose the license(s) that fit your goals and add a `LICENSE` file. A common split is:
+- **Hardware (schematics, PCB, CAD, design files):** CERN-OHL-S-2.0 (see `LICENSE-hardware`)
+- **Documentation, images, drawings, renders:** CC BY 4.0 (see `LICENSE-docs`)
+- **Software / firmware / scripts:** Apache 2.0 (see `LICENSE-code`)
 
-- **CERN-OHL-W v2** for hardware,
-- **CC BY-SA 4.0** for CAD models,
-- **Apache-2.0** for firmware.
+## Attribution Requirement
+
+If you use, modify, or redistribute any part of this project, you **must** give credit as follows:
+
+> Based on FalconEgde by Rmingon (https://github.com/rmingon/Falcon-Edge) — Licensed under the corresponding license.
+
+See `NOTICE` for full details.
 
 ---
 
