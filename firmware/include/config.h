@@ -27,7 +27,7 @@
 #define GPS_RX_BUF_SIZE 1024
 
 // Sensor I2C Addresses
-#define BMP280_I2C_ADDR 0x76 // or 0x77
+#define BMP280_I2C_ADDR 0x77 // or 0x77
 #define HMC5883L_I2C_ADDR 0x1E
 #define MPU6050_I2C_ADDR 0x68 // or 0x69
 
@@ -64,30 +64,30 @@
 #define YAW_PID_MAX_INTEGRAL 30.0f
 
 // WiFi Long Range Configuration
-#define WIFI_ENABLED                true        // Set to false to disable WiFi
-#define WIFI_DEFAULT_SSID           "DroneGCS"  // Change to your network
-#define WIFI_DEFAULT_PASSWORD       "drone123"  // Change to your password
+#define WIFI_ENABLED true                // Set to false to disable WiFi
+#define WIFI_DEFAULT_SSID "DroneGCS"     // Change to your network
+#define WIFI_DEFAULT_PASSWORD "drone123" // Change to your password
 
 // FreeRTOS Task Priorities
-#define SENSOR_TASK_PRIORITY        5
-#define CONTROL_TASK_PRIORITY       6
-#define GPS_TASK_PRIORITY           3
-#define LORA_TASK_PRIORITY          2
-#define WIFI_TASK_PRIORITY          2
+#define SENSOR_TASK_PRIORITY 5
+#define CONTROL_TASK_PRIORITY 6
+#define GPS_TASK_PRIORITY 3
+#define LORA_TASK_PRIORITY 2
+#define WIFI_TASK_PRIORITY 2
 
 // FreeRTOS Task Stack Sizes
-#define SENSOR_TASK_STACK_SIZE      4096
-#define CONTROL_TASK_STACK_SIZE     4096
-#define GPS_TASK_STACK_SIZE         3072
-#define LORA_TASK_STACK_SIZE        3072
-#define WIFI_TASK_STACK_SIZE        4096
+#define SENSOR_TASK_STACK_SIZE 4096
+#define CONTROL_TASK_STACK_SIZE 4096
+#define GPS_TASK_STACK_SIZE 3072
+#define LORA_TASK_STACK_SIZE 3072
+#define WIFI_TASK_STACK_SIZE 4096
 
 // Control Loop Rates (Hz)
-#define SENSOR_SAMPLE_RATE_HZ       100
-#define CONTROL_LOOP_RATE_HZ        100
-#define GPS_READ_RATE_HZ            10
-#define LORA_TX_RATE_HZ             1
-#define WIFI_TX_RATE_HZ             5
+#define SENSOR_SAMPLE_RATE_HZ 100
+#define CONTROL_LOOP_RATE_HZ 100
+#define GPS_READ_RATE_HZ 10
+#define LORA_TX_RATE_HZ 1
+#define WIFI_TX_RATE_HZ 5
 
 // Complementary Filter
 #define ALPHA_GYRO 0.98f
